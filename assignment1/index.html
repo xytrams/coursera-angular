@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Name Calculator</title>
+  </head>
+  <body ng-app="LunchApprover">
+    <h1>Lunch Approver</h1>
+    <div ng-controller="LunchApproverController">
+      <div>
+        Your lunch food choices:
+        <input type="text"
+          ng-model="items">
+        <button ng-click="check ();">Check If Too Much</button>
+        <button ng-click="clear ();">Refresh</button>
+      </div>
+      <div>{{message}}</div>
+    </div>
+  </body>
+</html>
