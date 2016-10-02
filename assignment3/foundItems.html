@@ -1,0 +1,11 @@
+
+<ul>
+
+  <li ng-repeat="item in ctrl.items">
+    <div class='name'> name: {{item.name}} </div>
+    <div class='name'> short name: {{item.short_name}} </div>
+    <div class='description'>description: {{item.description}}</div>
+    <button ng-click="ctrl.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+
+</ul>
