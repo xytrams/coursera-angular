@@ -1,0 +1,18 @@
+
+<div class="list-group">
+  <div class="list-group-item row" ng-repeat="item in $ctrl.items">
+      <h4>{{item.name}}
+        <span class="badge">{{item.short_name}} </span>
+      </h4>
+      <p>
+        {{item.description}}
+      </p>
+      <p>
+        <span>{{item.large_portion_name}}</span>
+        <span class="label label-success">{{item.price_large | currency}}</span>
+        &nbsp;&nbsp;
+        <span>{{item.small_portion_name}}</span>
+        <span class="label label-info">{{item.price_small | currency}}</span>
+      </p>
+  </div>
+</div>

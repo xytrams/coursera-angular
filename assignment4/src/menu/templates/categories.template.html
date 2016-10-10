@@ -1,0 +1,8 @@
+<div class="list-group">
+  <div class="list-group-item" ng-repeat="item in $ctrl.items"
+       ui-sref="items({categoryId: item.short_name})">
+    <p>
+      <h4>{{item.name}} <span class="">{{item.short_name}} </span></h4>
+    </p>
+  </div>
+</div>

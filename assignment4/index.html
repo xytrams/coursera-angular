@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Menu Choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <!-- Libraries -->
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+
+  <!-- Modules -->
+  <script src="src/menu/js/menuapp.module.js"></script>
+  <script src="src/data/js/data.module.js"></script>
+
+  <!-- Routes -->
+  <script src="src/routes.js"></script>
+
+  <!-- 'MenuApp' module artifacts -->
+  <script src="src/data/js/menudata.service.js"></script>
+  <script src="src/menu/js/categories.component.js"></script>
+  <script src="src/menu/js/items.component.js"></script>
+  <script src="src/menu/js/categories.controller.js"></script>
+  <script src="src/menu/js/items.controller.js"></script>
+
+
+  <body ng-app="MenuApp">
+
+    <div class="container">
+      <div class="row">
+          <h1>Welcome to our Chineese Restaurant</h1>
+
+      </div>
+    </div>
+
+    <ui-view></ui-view>
+
+  </body>
+</html>
